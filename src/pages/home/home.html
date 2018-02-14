@@ -1,0 +1,18 @@
+<ion-content>
+  <mbsc-form>
+      <div class="mbsc-align-center">
+          <div class="mbsc-note mbsc-note-primary">The calendar can be used inside a mobiscroll form or on any input.</div>
+      </div>
+      <div class="mbsc-form-group">
+          <div class="mbsc-form-group-title">Inside Mobiscroll Form</div>
+          <mbsc-calendar [(ngModel)]="demo" [options]="demoSettings" placeholder="Please Select...">Date</mbsc-calendar>
+          <mbsc-calendar [(ngModel)]="header" [options]="headerSettings" placeholder="Please Select...">Header text</mbsc-calendar>
+      </div>
+      <div class="mbsc-form-group mbsc-padding">
+          <p class="mbsc-thin">Use it on any input or non-mobiscroll form.</p>
+      </div>
+  </mbsc-form>
+  <ion-item>
+      <ion-input [(ngModel)]="nonForm" mbsc-calendar [mbsc-options]="nonFormSettings" placeholder="Please Select..."></ion-input>
+  </ion-item>
+</ion-content>
